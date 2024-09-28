@@ -14,6 +14,15 @@ const addEventOnElem = function (elem, type, callback) {
     elem.addEventListener(type, callback);
   }
 }
+/**Custom button */
+document.addEventListener('mousemove', function(e) {
+  const cursor = document.querySelector('.custom-cursor');
+  
+  // Set the position of the custom cursor based on mouse coordinates
+  cursor.style.left = e.pageX + 'px';
+  cursor.style.top = e.pageY + 'px';
+});
+
 
 /**
  * navbar toggle
